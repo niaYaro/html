@@ -41,11 +41,40 @@
         <br>
         <textarea name="area" id="textarea" cols="30" rows="10"></textarea>
         <br>
-        <label for="gender">Gender</label>
-        <select name="gender" id="gender">
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-        </select>
+        <form action="">
+            <div>
+                <p>Operating system:</p>
+                <input type="radio" id="android" name="system" value="Android">
+                <label for="android">Android</label>
+                <input type="radio" id="ios" name="system" value="iOS">
+                <label for="ios">iOS</label>
+                <input type="radio" id="other" name="system" value="Other" checked>
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <p>Gender</p>
+                <select name="Gender" id="gender">
+                    <option value="---">---</option>
+                    <option value="female">female</option>
+                    <option value="male">male</option>
+                </select>
+            </div>
+            <div>
+                <p>Sources of funds:</p>
+                <input type="checkbox" id="firstSource" name="firstSource" value="Salary">
+                <label for="firstSource">Salary</label>
+                <input type="checkbox" id="secondSource" name="secondSource" value="Personal savings">
+                <label for="secondSource">Personal savings</label>
+                <input type="checkbox" id="thirdSource" name="thirdSource" value="Pension releases">
+                <label for="thirdSource">Pension releases</label>
+                <input type="checkbox" id="fourthSource" name="fourthSource" value="Share sales and dividends">
+                <label for="fourthSource">Share sales and dividends</label>
+                <input type="checkbox" id="fifthSource" name="fifthSource" value="Property sales">
+                <label for="fifthSource">Property sales</label>
+                <input type="checkbox" id="sixthSource" name="sixthSource" value="Inheritances and gifts">
+                <label for="sixthSource">Inheritances and gifts</label>
+            </div>
+        </form>
         <button type="submit">Submit</button>
     </main>
     <footer>
